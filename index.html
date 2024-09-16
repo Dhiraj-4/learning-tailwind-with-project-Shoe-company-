@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoe Company</title>
+    <link rel="stylesheet" href="output.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+        #hero{
+            background-image: url(background-road-share\ 1.png);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+
+    <header class="px-12 flex justify-between items-center w-screen fixed max-w-[1440px] left-[50%] -translate-x-[50%]">
+
+        <a href="#">
+            <img class="w-36 " src="images/shoe-company-logo 1.png" alt="shoe-company-logo">
+            <div class="text-sm -mt-8">The Shoe Company</div>
+        </a>
+
+        <nav class="hidden md:block space-x-6 lg:space-x-8 lg:text-2xl">
+            <a class="font-bold" href="#">Home</a>
+            <a class="font-bold" href="#how-it-works">How It Works?</a>
+            <a class="font-bold" href="#about">About</a>
+            <a class="font-bold" href="#testimonials">Testimonials</a>
+            <a class="font-bold" href="#contact us">Contact Us</a>
+        </nav>
+        
+        <button class="text-5xl md:hidden">☰</button>
+    </header>
+
+    <section id="hero" class="bg-contain bg-no-repeat bg-right max-w-[1440px] mx-auto">
+
+        <div class="flex items-center pt-36 justify-around max-w-6xl mx-auto">
+            <h1 class="font-bold text-6xl leading-[72px]">THE <br> SHOE <br> COMPANY</h1>
+            <img class="w-[550px] shrink-1" src="images/the-white-shoe-hero-image 1.png" alt="hero-background-image">
+        </div>
+    </section>
+    
+</body>
+</html>
