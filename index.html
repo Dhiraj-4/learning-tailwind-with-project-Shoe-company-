@@ -5,44 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Shoe Company</title>
     <link rel="stylesheet" href="output.css">
-
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-
-        #hero{
-            background-image: url(background-road-share\ 1.png);
+        section{
+            background-image: url('./images/background-road-share 1.png');
+        }
+        @media screen and (max-width:640px) {
+            section{
+                background-image: url('./images/background-road-share\ 2.png');
+            }
+            #cover{
+                background-image: url('./images/black-background-hero\ 2.png');
+            }
         }
     </style>
 </head>
 <body class="bg-black text-white">
-
     <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+    <header class="flex flex-shrink items-center justify-between px-6 sm:px-12 fixed left-[50%] -translate-x-[50%] w-screen max-w-[1440px]">
+        <div>
+            <img class="w-24 sm:w-32" src="images/shoe-company-logo 1.png" alt="The shoe hero image">
+            <p class="text-xs sm:text-sm  font-bold -mt-6 sm:-mt-8">The Shoe Company</p>
+        </div>
 
-    <header class="px-12 flex justify-between items-center w-screen fixed max-w-[1440px] left-[50%] -translate-x-[50%]">
+        <div class="space-x-8 lg:text-2xl font-bold hidden md:block ">
+            <a href="#">Home</a>
+            <a href="#">How It Works?</a>
+            <a href="#">About</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us</a>
+        </div>
 
-        <a href="#">
-            <img class="w-36 " src="images/shoe-company-logo 1.png" alt="shoe-company-logo">
-            <div class="text-sm -mt-8">The Shoe Company</div>
-        </a>
-
-        <nav class="hidden md:block space-x-6 lg:space-x-8 lg:text-2xl">
-            <a class="font-bold" href="#">Home</a>
-            <a class="font-bold" href="#how-it-works">How It Works?</a>
-            <a class="font-bold" href="#about">About</a>
-            <a class="font-bold" href="#testimonials">Testimonials</a>
-            <a class="font-bold" href="#contact us">Contact Us</a>
-        </nav>
-        
-        <button class="text-5xl md:hidden">☰</button>
+        <button class="text-4xl md:hidden">☰</button>
     </header>
 
-    <section id="hero" class="bg-contain bg-no-repeat bg-right max-w-[1440px] mx-auto">
+    <div id="cover">
+        <section id="hero" class="flex justify-center bg-contain bg-no-repeat bg-bottom sm:bg-right mx-auto max-w-[1440px]">
 
-        <div class="flex items-center pt-36 justify-around max-w-6xl mx-auto">
-            <h1 class="font-bold text-6xl leading-[72px]">THE <br> SHOE <br> COMPANY</h1>
-            <img class="w-[550px] shrink-1" src="images/the-white-shoe-hero-image 1.png" alt="hero-background-image">
-        </div>
-    </section>
+            <div class="flex flex-shrink flex-col sm:flex-row sm:items-center justify-center pt-32 px-8 ">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-[48px] md:leading-[72px]">THE <br> SHOE <br> COMPANY</h1>
+                <img class="max-w-full sm:max-w-xs md:max-w-sm lg:max-w-xl " src="images/the-white-shoe-hero-image 1.png" alt="White shoe hero image">
+            </div>
+        </section>
+    </div> 
     
+    <h2 class="text-center font-bold text-5xl mt-10">Have they finally made the <br> perfect workout shoe?</h2>
+
+    <div id="how-it-works?" class="flex justify-center items-center p-24">
+        <img src="./images/how-it-works-image 1.png" alt="How it works image">
+    </div>
 </body>
 </html>
