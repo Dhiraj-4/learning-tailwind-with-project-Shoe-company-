@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Shoe Company</title>
     <link rel="stylesheet" href="output.css">
     <style>
-        section{
+        #hero{
             background-image: url('./images/background-road-share 1.png');
         }
         @media screen and (max-width:640px) {
-            section{
+            #hero{
                 background-image: url('./images/background-road-share\ 2.png');
             }
             #cover{
@@ -21,18 +21,18 @@
 </head>
 <body class="bg-black text-white">
     <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
-    <header class="flex flex-shrink items-center justify-between px-6 sm:px-12 fixed left-[50%] -translate-x-[50%] w-screen max-w-[1440px]">
+    <header class="flex items-center justify-between px-6 sm:px-12 fixed left-[50%] -translate-x-[50%] w-screen max-w-[1440px]">
         <div>
             <img class="w-24 sm:w-32" src="images/shoe-company-logo 1.png" alt="The shoe hero image">
             <p class="text-xs sm:text-sm  font-bold -mt-6 sm:-mt-8">The Shoe Company</p>
         </div>
 
         <div class="space-x-8 lg:text-2xl font-bold hidden md:block ">
-            <a href="#">Home</a>
-            <a href="#">How It Works?</a>
-            <a href="#">About</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact Us</a>
+            <a href="#hero">Home</a>
+            <a href="#HowItWorks">How It Works?</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contactus">Contact Us</a>
         </div>
 
         <button class="text-4xl md:hidden">☰</button>
@@ -41,17 +41,40 @@
     <div id="cover">
         <section id="hero" class="flex justify-center bg-contain bg-no-repeat bg-bottom sm:bg-right mx-auto max-w-[1440px]">
 
-            <div class="flex flex-shrink flex-col sm:flex-row sm:items-center justify-center pt-32 px-8 ">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-around pt-32 px-8 ">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-[48px] md:leading-[72px]">THE <br> SHOE <br> COMPANY</h1>
                 <img class="max-w-full sm:max-w-xs md:max-w-sm lg:max-w-xl " src="images/the-white-shoe-hero-image 1.png" alt="White shoe hero image">
             </div>
         </section>
     </div> 
     
-    <h2 class="text-center font-bold text-5xl mt-10">Have they finally made the <br> perfect workout shoe?</h2>
+    <h3 class="text-center font-bold text-5xl mx-auto pt-12 max-w-[1440px]">Have they finally made the <br> perfect workout shoe?</h3>
 
-    <div id="how-it-works?" class="flex justify-center items-center p-24">
-        <img src="./images/how-it-works-image 1.png" alt="How it works image">
-    </div>
+    <section id="HowItWorks" class="max-w-[1440px] mt-20 mx-auto">
+
+
+        <div class="mx-auto max-w-2xl pt-28 px-12 relative">
+            
+            <img class="max-w-full" src="./images/how-it-works-image 1.png" alt="White Shoe">
+
+            <div id="TheHeel" class="max-w-[250px] absolute top-[15%] -left-[30%] space-y-3">
+                <h3 class="font-bold text-3xl">THE HEEL</h3>
+                <p class="text-xl">The heel is well-built, has appropriate elevation and is not too rigid.</p>
+                <img class="max-w-36 absolute left-[50%] top-[75%]" src="./images/the heel/arrow-1.png" alt="arrow-1">
+            </div>
+
+            <div id="traction" class="absolute top-[90%] space-y-3">
+                <h3 class="font-bold text-3xl">TRACTION</h3>
+                <p class="text-xl">The shoe has good traction <br> and doesn't slip easily.</p>
+                <img class="max-w-36 absolute -top-[70%] -right-[30%]" src="./images/TRACTION/arrow-3.png" alt="arrow-3">
+            </div>
+
+            <div id="TheFront" class="absolute top-[25%] -right-[15%] space-y-3">
+                <img class="max-w-36 absolute -top-[20%] -left-[50%]" src="./images/the front/arrow-2.png" alt="arrow-2">
+                <h3 class="font-bold text-3xl">THE FRONT</h3>
+                <p class="text-xl">The front is comfortable and <br> adjusts well to the shape of <br> your foot.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
