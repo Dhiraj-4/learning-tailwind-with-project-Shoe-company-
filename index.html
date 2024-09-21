@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="output.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-        
         *{
             font-family: 'Archivo';
         }
         #hero{
             background-image: url('./images/background-road-share 1.png');
+        }
+        #divAbout{
+            background-image: url('./images/aboutus/about-us-background.png');
         }
         @media screen and (max-width:640px) {
             #hero{
@@ -26,7 +28,7 @@
 </head>
 <body class="bg-black text-white">
     <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
-    <header class="flex items-center justify-between px-6 sm:px-12 fixed left-[50%] -translate-x-[50%] w-screen max-w-[1440px]">
+    <header class="flex items-center justify-between px-6 sm:px-12 fixed left-[50%] -translate-x-[50%] w-screen max-w-[1440px] z-10">
         <div>
             <img class="w-24 sm:w-32" src="images/shoe-company-logo 1.png" alt="The shoe hero image">
             <p class="text-xs sm:text-sm  font-bold -mt-6 sm:-mt-8">The Shoe Company</p>
@@ -53,9 +55,9 @@
         </section>
     </div> 
     
-    <section id="HowItWorks" class="max-w-[1440px] mt-10 mx-auto">
+    <section id="HowItWorks" class="max-w-[1440px] mt-16 mx-auto">
 
-        <h3 class="text-2xl media500:text-4xl font-bold text-center mx-auto pt-20 max-w-[300px] media500:max-w-[574px]">Have they finally made the perfect workout shoe?</h3>
+        <h3 class="text-2xl mb-4 media500:text-4xl font-bold text-center mx-auto pt-28 max-w-[300px] media500:max-w-[574px]">Have they finally made the perfect workout shoe?</h3>
         
         <div class="mx-auto max-w-52 media350:max-w-72 media500:max-w-sm md:max-w-xl pt-52 xl:pt-12 relative">
 
@@ -79,6 +81,26 @@
                     <p class="text-xs media350:text-sm media500:text-base md:text-lg">The shoe has good traction and doesn't slip easily.</p>
                 </div>
         </div>
+    </section>
+
+    <section id="about" class="max-w-[1440px] mx-auto mt-9 pt-28 pb-16 flex items-center space-x-12">
+
+
+        <div id="divAbout" class="bg-no-repeat">
+            <img class=" max-h-[552px] min-w-[534px]" src="./images/aboutus/about-shoe-company.png" alt="legs">
+        </div>
+
+        <div id="Aboutus1" class="space-y-4 max-w-md">
+            <h3 class="font-bold text-4xl">ABOUT US!</h3>
+
+            <p class="text-xl">
+                <div>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear</div>
+                <div>Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</div>
+                <div>At THE SHOE COMPANY,  you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</div>
+                <div>Simple right? Not just we are here to spare your time, we are putting forth you the most dazzling footwear alternatives from all the first-rate brands like DAVINCHI, PRINCESS, and SIGNATURE. At ‘Organization Name’, we offer men, ladies, and child’s shoes perfect for any and each event.</div>
+            </p>
+        </div>
+        
     </section>
 </body>
 </html>
