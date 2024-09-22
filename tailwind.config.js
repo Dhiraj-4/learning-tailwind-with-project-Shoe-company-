@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       screens: {
         'media500': '500px',
-        'media350': '350px'
+        'media350': '350px',
+        'media290': '290px',
       },
     },
   },
