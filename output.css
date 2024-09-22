@@ -1589,6 +1589,10 @@ video {
     width: 8rem;
   }
 
+  .sm\:w-44 {
+    width: 11rem;
+  }
+
   .sm\:w-\[30\%\] {
     width: 30%;
   }
@@ -1697,6 +1701,10 @@ video {
     width: 9rem;
   }
 
+  .md\:w-56 {
+    width: 14rem;
+  }
+
   .md\:max-w-36 {
     max-width: 9rem;
   }
@@ -1763,6 +1771,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-56 {
     width: 14rem;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
   }
 
   .lg\:max-w-md {
