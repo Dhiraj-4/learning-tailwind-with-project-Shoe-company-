@@ -23,6 +23,9 @@
             #cover{
                 background-image: url('./images/black-background-hero\ 2.png');
             }
+            #divAbout{
+                background-image: url('./images/aboutus/mobile/about-us-background\ 1.png');
+            }
         }
     </style>
 </head>
@@ -83,17 +86,25 @@
         </div>
     </section>
 
-    <section id="about" class="max-w-[1440px] mx-auto mt-9 pt-28 pb-16 flex items-center space-x-12">
+    <section id="about" class="max-w-[1440px] mx-auto mt-9 pt-28 pb-16 flex flex-col sm:flex-row items-center space-y-8 sm:space-x-12 sm:space-y-0" >
 
+        <h3 class="font-bold text-4xl block sm:hidden mx-auto text-center">ABOUT US!</h3>
 
-        <div id="divAbout" class="bg-no-repeat">
-            <img class=" max-h-[552px] min-w-[534px]" src="./images/aboutus/about-shoe-company.png" alt="legs">
+        <div id="divAbout" class="bg-no-repeat bg-cover max-w-full mx-auto sm:mx-0 sm:bg-auto">
+            <img class="hidden sm:block" src="./images/aboutus/about-shoe-company.png" alt="legs">
+            <img class="block h-max sm:hidden" src="./images/aboutus/mobile/about-shoe-company 1.png" alt="legs">
         </div>
 
-        <div id="Aboutus1" class="space-y-4 max-w-md">
+        <div id="Aboutus2" class="block sm:hidden space-y-5 px-6">
+            <p class="text-xl">
+                <div>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear.</div>
+                <div>At THE SHOE COMPANY,  you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</div>
+            </p>
+        </div>
+        <div id="Aboutus1" class="hidden sm:block space-y-4 max-w-[50%] md:max-w-xs lg:max-w-md">
             <h3 class="font-bold text-4xl">ABOUT US!</h3>
 
-            <p class="text-xl">
+            <p class="text-base md:text-xl">
                 <div>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear</div>
                 <div>Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</div>
                 <div>At THE SHOE COMPANY,  you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</div>
