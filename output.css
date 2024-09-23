@@ -582,8 +582,8 @@ video {
   right: -0px;
 }
 
-.-right-\[12\.5\%\] {
-  right: -12.5%;
+.-right-\[5\%\] {
+  right: -5%;
 }
 
 .-top-\[60\%\] {
@@ -622,8 +622,8 @@ video {
   top: 102.5%;
 }
 
-.top-\[117\.5\%\] {
-  top: 117.5%;
+.top-\[110\%\] {
+  top: 110%;
 }
 
 .top-\[20\%\] {
@@ -1532,6 +1532,27 @@ video {
 }
 
 @media (min-width: 290px) {
+  .media290\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .media290\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .media290\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .media290\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .media290\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
